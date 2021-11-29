@@ -3,11 +3,11 @@ package Homework;
 public class HomeWorkApp {
     public static void main(String[] args) {
 
-        System.out.println(consistIn(15, 10));
-        typeOfVar(0);
-        System.out.println(checkVar(0));
-        printString("Hello there!", 5);
-        isLeapYear(2021);
+        System.out.println(consistIn(15, 10)); // Лежит ли сумма в пределах от 10 до 20
+        typeOfVar(0);  // Положительное число или отрицательное. Вывод в консоль
+        System.out.println(checkVar(0));  // Положительное число или отрицательное. Вывод в консоль Boolean
+        printString("Hello there!", 5);  // Печатает строку в консоли n раз
+        System.out.println(isLeapYear(2021));  // Проверяет високосный ли год
     }
 
     static boolean consistIn(int a, int b) {
@@ -44,11 +44,11 @@ public class HomeWorkApp {
         }
     }
 
-    static void isLeapYear(int year) {
+    static Boolean isLeapYear(int year) {
         if ((year % 4 == 0 && (year & 100) != 0) || (year % 100 == 0))
-            System.out.println(year + " год является високосным");
+            return true;
         else
-            System.out.println(year + " год не является високосным");
+            return false;
     }
 
 
