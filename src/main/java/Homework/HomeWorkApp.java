@@ -2,9 +2,16 @@ package Homework;
 
 public class HomeWorkApp {
     public static void main(String[] args) {
+        printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+    }
+
+    static void printThreeWords() {
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
     }
 
     static void checkSumSign() {
