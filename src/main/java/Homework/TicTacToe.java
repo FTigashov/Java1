@@ -131,7 +131,7 @@ public class TicTacToe {
     }
 
 
-    private static void turnHuman() {
+    private static void turnHuman() { // ход человека
         System.out.println("Ваш ход");
         int rowNumber, columnNumber;
 
